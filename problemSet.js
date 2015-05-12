@@ -11,22 +11,17 @@
       ini = i;
     } 
   } 
-  var longest = max.length+5; 
+  var longest = max.length+4; 
    
-  var newStr;
-  for(var j = 0; j<longest*phrase.length+2; j++) {
-    
+  for(var j = 0; j<newArr.length+2; j++) {
+    if(j === 0)
+      console.log('*'.repeat(longest));
+    else if(j === newArr.length+1)
+      console.log('*'.repeat(longest));
+    else
+      console.log('* '+newArr[(j-1)]+ ' '.repeat(max.length-(newArr[j-1].length)) + ' *');   
   }
-   
 
-//     **********
-  //   * Hello  *
-    // * World! *
-    // **********
-
-     
-   //return "**********\n* Hello  *\n* World! *\n**********";
-  return newArr.length+2;
 }
 
 function isPrime(x) {
