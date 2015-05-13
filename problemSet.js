@@ -4,11 +4,9 @@
   var newArr = [];
   newArr = phrase.split(' ');  
   var max = newArr[0];
-  var ini = 0;
   for (var i = 1; i < newArr.length; i++){
     if(newArr[i].length > max.length){
       max = newArr[i];
-      ini = i;
     } 
   } 
   var longest = max.length+4; 
